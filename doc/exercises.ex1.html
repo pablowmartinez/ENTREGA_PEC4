@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module exercises.ex1</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title"><a href="exercises.html" class="white">exercises</a>.ex1</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cpablo%5Cdesktop%5Cmaestria%20uoc%5C22.503%20-%20programaci%C3%B3n%20para%20la%20ciencia%20de%20datos%5Centrega_pec4%5Centregable%5Cpec4%5Csrc%5Cexercises%5Cex1.py">c:\users\pablo\desktop\maestria uoc\22.503 - programación para la ciencia de datos\entrega_pec4\entregable\pec4\src\exercises\ex1.py</a></td></tr></table>
+    <p><span class="code">Ejercicio&nbsp;1:&nbsp;carga,&nbsp;limpieza&nbsp;inicial&nbsp;y&nbsp;visualizacion&nbsp;del&nbsp;dataset.</span></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+    
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="matplotlib.html">matplotlib</a><br>
+</td><td class="multicolumn"><a href="pandas.html">pandas</a><br>
+</td><td class="multicolumn"><a href="matplotlib.pyplot.html">matplotlib.pyplot</a><br>
+</td><td class="multicolumn"></td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor functions-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Functions</strong></td></tr>
+    
+<tr><td class="decor functions-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt><a name="-get_basic_info"><strong>get_basic_info</strong></a>(df: pandas.DataFrame) -&gt; pandas.DataFrame</dt><dd><span class="code">Devuelve&nbsp;informacion&nbsp;basica&nbsp;del&nbsp;DataFrame&nbsp;en&nbsp;formato&nbsp;tabular.</span></dd></dl>
+ <dl><dt><a name="-load_and_eda"><strong>load_and_eda</strong></a>(file: str | pathlib._local.Path) -&gt; pandas.DataFrame</dt><dd><span class="code">Carga&nbsp;el&nbsp;CSV&nbsp;indicado&nbsp;y&nbsp;elimina&nbsp;las&nbsp;columnas&nbsp;del&nbsp;descanso.</span></dd></dl>
+ <dl><dt><a name="-load_clean_dataset"><strong>load_clean_dataset</strong></a>() -&gt; pandas.DataFrame</dt><dd><span class="code">Carga&nbsp;el&nbsp;CSV&nbsp;de&nbsp;LaLiga&nbsp;y&nbsp;elimina&nbsp;las&nbsp;columnas&nbsp;del&nbsp;descanso.</span></dd></dl>
+ <dl><dt><a name="-plot_home_away_goals"><strong>plot_home_away_goals</strong></a>(data: pandas.DataFrame) -&gt; pathlib._local.Path</dt><dd><span class="code">Genera&nbsp;y&nbsp;guarda&nbsp;un&nbsp;boxplot&nbsp;de&nbsp;goles&nbsp;locales&nbsp;y&nbsp;visitantes.</span></dd></dl>
+ <dl><dt><a name="-run"><strong>run</strong></a>() -&gt; tuple[pandas.DataFrame, pandas.DataFrame, pathlib._local.Path]</dt><dd><span class="code">Ejecuta&nbsp;el&nbsp;ejercicio&nbsp;1&nbsp;y&nbsp;devuelve&nbsp;datos&nbsp;limpios,&nbsp;info&nbsp;e&nbsp;imagen.</span></dd></dl>
+ <dl><dt><a name="-save_goals_boxplot"><strong>save_goals_boxplot</strong></a>(df: pandas.DataFrame) -&gt; pathlib._local.Path</dt><dd><span class="code">Genera&nbsp;y&nbsp;guarda&nbsp;un&nbsp;boxplot&nbsp;de&nbsp;goles&nbsp;locales&nbsp;y&nbsp;visitantes.</span></dd></dl>
+</td></tr></table><p>
+<table class="section">
+<tr class="decor data-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Data</strong></td></tr>
+    
+<tr><td class="decor data-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><strong>CSV_PATH</strong> = WindowsPath('C:/Users/pablo/Desktop/Maestria UOC...EC4/Entregable/PEC4/src/data/LaLiga_Matches.csv')<br>
+<strong>DROP_COLUMNS</strong> = ['HTHG', 'HTAG', 'HTR']<br>
+<strong>__annotations__</strong> = {'DROP_COLUMNS': list[str]}</td></tr></table>
+</body></html>

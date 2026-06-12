@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module exercises.ex6</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title"><a href="exercises.html" class="white">exercises</a>.ex6</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cpablo%5Cdesktop%5Cmaestria%20uoc%5C22.503%20-%20programaci%C3%B3n%20para%20la%20ciencia%20de%20datos%5Centrega_pec4%5Centregable%5Cpec4%5Csrc%5Cexercises%5Cex6.py">c:\users\pablo\desktop\maestria uoc\22.503 - programación para la ciencia de datos\entrega_pec4\entregable\pec4\src\exercises\ex6.py</a></td></tr></table>
+    <p><span class="code">Ejercicio&nbsp;6:&nbsp;resumen&nbsp;historico&nbsp;de&nbsp;puntos&nbsp;y&nbsp;goles.</span></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+    
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="exercises.ex5.html">exercises.ex5</a><br>
+</td><td class="multicolumn"><a href="matplotlib.html">matplotlib</a><br>
+</td><td class="multicolumn"><a href="pandas.html">pandas</a><br>
+</td><td class="multicolumn"><a href="matplotlib.pyplot.html">matplotlib.pyplot</a><br>
+</td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor functions-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Functions</strong></td></tr>
+    
+<tr><td class="decor functions-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt><a name="-build_historical_summary"><strong>build_historical_summary</strong></a>(df: pandas.DataFrame) -&gt; pandas.DataFrame</dt><dd><span class="code">Combina&nbsp;puntos&nbsp;historicos&nbsp;y&nbsp;goles&nbsp;por&nbsp;equipo.</span></dd></dl>
+ <dl><dt><a name="-calculate_goals_by_team"><strong>calculate_goals_by_team</strong></a>(df: pandas.DataFrame) -&gt; pandas.DataFrame</dt><dd><span class="code">Calcula&nbsp;goles&nbsp;como&nbsp;local,&nbsp;visitante&nbsp;y&nbsp;total&nbsp;por&nbsp;equipo.</span></dd></dl>
+ <dl><dt><a name="-fun_summary_1996_2025"><strong>fun_summary_1996_2025</strong></a>(
+    total_points_by_team: pandas.Series,
+    home_goals_by_team: pandas.DataFrame,
+    away_goals_by_team: pandas.DataFrame,
+    total_goals_by_team: pandas.DataFrame
+) -&gt; pandas.DataFrame</dt><dd><span class="code">Construye&nbsp;el&nbsp;resumen&nbsp;historico&nbsp;de&nbsp;puntos&nbsp;y&nbsp;goles&nbsp;por&nbsp;equipo.</span></dd></dl>
+ <dl><dt><a name="-fun_total_goals"><strong>fun_total_goals</strong></a>(data: pandas.DataFrame) -&gt; tuple[int, int, int]</dt><dd><span class="code">Calcula&nbsp;goles&nbsp;locales,&nbsp;visitantes&nbsp;y&nbsp;totales&nbsp;del&nbsp;dataset.</span></dd></dl>
+ <dl><dt><a name="-fun_total_goals_by_team"><strong>fun_total_goals_by_team</strong></a>(data: pandas.DataFrame) -&gt; tuple[pandas.DataFrame, pandas.DataFrame, pandas.DataFrame]</dt><dd><span class="code">Calcula&nbsp;goles&nbsp;como&nbsp;local,&nbsp;visitante&nbsp;y&nbsp;total&nbsp;por&nbsp;equipo.</span></dd></dl>
+ <dl><dt><a name="-get_top_three_teams"><strong>get_top_three_teams</strong></a>(summary: pandas.DataFrame) -&gt; pandas.DataFrame</dt><dd><span class="code">Obtiene&nbsp;los&nbsp;tres&nbsp;primeros&nbsp;equipos&nbsp;del&nbsp;resumen&nbsp;historico.</span></dd></dl>
+ <dl><dt><a name="-podium"><strong>podium</strong></a>(summary_1996_2025: pandas.DataFrame) -&gt; pathlib._local.Path</dt><dd><span class="code">Genera&nbsp;y&nbsp;guarda&nbsp;una&nbsp;grafica&nbsp;tipo&nbsp;podium&nbsp;con&nbsp;el&nbsp;top&nbsp;3.</span></dd></dl>
+ <dl><dt><a name="-run"><strong>run</strong></a>(df: pandas.DataFrame) -&gt; tuple[tuple[int, int, int], pandas.DataFrame, pandas.DataFrame, pathlib._local.Path]</dt><dd><span class="code">Ejecuta&nbsp;el&nbsp;ejercicio&nbsp;6&nbsp;a&nbsp;partir&nbsp;del&nbsp;DataFrame&nbsp;limpio.</span></dd></dl>
+ <dl><dt><a name="-save_podium_chart"><strong>save_podium_chart</strong></a>(top_three: pandas.DataFrame) -&gt; pathlib._local.Path</dt><dd><span class="code">Genera&nbsp;y&nbsp;guarda&nbsp;una&nbsp;grafica&nbsp;tipo&nbsp;podium&nbsp;con&nbsp;el&nbsp;top&nbsp;3.</span></dd></dl>
+</td></tr></table>
+</body></html>
