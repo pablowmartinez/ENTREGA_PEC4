@@ -112,6 +112,12 @@ Ejecutar tests:
 
 ## Pylint
 
+`pylint` se usa como herramienta de desarrollo y no forma parte de las dependencias funcionales del proyecto. Si no esta instalado, se puede instalar aparte:
+
+```powershell
+.venv\Scripts\python.exe -m pip install pylint
+```
+
 Ejecutar revision de calidad con pylint:
 
 ```powershell
@@ -142,6 +148,10 @@ $env:PYTHONPATH='..\src;..'
 ```
 
 Se generaron documentos para `main`, `config`, los ejercicios `ex1` a `ex7` y el test `tests_ex6`.
+
+## Preparacion del ZIP
+
+La carpeta `.venv/` no debe incluirse en el ZIP final de entrega.
 
 ## Git y GitHub
 

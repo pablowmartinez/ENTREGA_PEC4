@@ -59,7 +59,7 @@ def plot_FTR(ftr: pd.DataFrame) -> Path:  # pylint: disable=invalid-name
     image_path.parent.mkdir(parents=True, exist_ok=True)
 
     plt.figure(figsize=(7, 5))
-    plt.bar(ftr["descripcion"], ftr["partidos"])
+    plt.bar(ftr["resultado"], ftr["partidos"])
     plt.title("Distribucion del resultado final")
     plt.xlabel("Resultado")
     plt.ylabel("Numero de partidos")

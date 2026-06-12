@@ -101,8 +101,12 @@ def print_exercise_4(df: pd.DataFrame) -> None:
 def print_exercise_5(df: pd.DataFrame) -> None:
     """Muestra los resultados principales del ejercicio 5."""
     classification, top_team, image_path = ex5.run(df)
+    data_with_points = ex5.add_points(df)
 
     print("Ejercicio 5 - Clasificacion historica por puntos")
+    print()
+    print("Primeras filas del dataset con puntos:")
+    print(data_with_points.head(10))
     print()
     print("Primeras filas de la clasificacion historica:")
     print(classification.head(10))
@@ -117,6 +121,7 @@ def print_exercise_5(df: pd.DataFrame) -> None:
 def print_exercise_6(df: pd.DataFrame) -> None:
     """Muestra los resultados principales del ejercicio 6."""
     total_goals, summary, top_three, image_path = ex6.run(df)
+    _, _, total_goals_by_team = ex6.fun_total_goals_by_team(df)
 
     print("Ejercicio 6 - Resumen historico de puntos y goles")
     print()
@@ -124,6 +129,9 @@ def print_exercise_6(df: pd.DataFrame) -> None:
     print(f"Total de goles locales: {home_goals}")
     print(f"Total de goles visitantes: {away_goals}")
     print(f"Total global de goles: {goals_total}")
+    print()
+    print("Primeras filas de total_goals_by_team:")
+    print(total_goals_by_team.head(10).to_string(index=False))
     print()
     print("Primeras filas del resumen historico:")
     print(summary.head(10).to_string())

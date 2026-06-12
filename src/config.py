@@ -6,6 +6,8 @@ from pathlib import Path
 
 STUDENT_NAME: str = "Pablo_Witold_Martinez"
 EXECUTION_TIMESTAMP: str = datetime.now().strftime("%Y%m%d_%H%M%S")
+nom_alumne: str = STUDENT_NAME  # pylint: disable=invalid-name
+date_time: str = EXECUTION_TIMESTAMP
 
 SRC_DIR: Path = Path(__file__).resolve().parent
 PROJECT_DIR: Path = SRC_DIR.parent
