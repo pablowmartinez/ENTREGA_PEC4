@@ -5,8 +5,3 @@ __pycache__/
 .ipynb_checkpoints/
 .pytest_cache/
 
-# Imágenes generadas automáticamente
-src/img/*.png
-
-# Mantener la carpeta src/img en el repositorio
-!src/img/.gitkeep
