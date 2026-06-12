@@ -150,8 +150,8 @@ Comandos basicos para preparar y subir la entrega:
 ```powershell
 git init
 git add .
-git commit -m "Entrega PEC4"
+git commit -m "Entrega final PEC4"
 git branch -M main
-git remote add origin URL_DEL_REPOSITORIO
+git remote add origin git@github.com:pablowmartinez/ENTREGA_PEC4.git
 git push -u origin main
 ```
